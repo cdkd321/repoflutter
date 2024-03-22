@@ -1,1 +1,13 @@
-/.dart_tool/
+/destini-challenge/.dart_tool/
+/destini-challenge/.idea/
+/destini-challenge/.flutter-plugins/
+/destini-challenge/.flutter-plugins-dependencies/
+/destini-challenge/.metadata
+/build
+/xylophone/.dart_tool/
+/xylophone/.idea/
+/xylophone/.flutter-plugins/
+/xylophone/.flutter-plugins-dependencies/
+/xylophone/.metadata
+/xylophone/build
+/xylophone/pubspec.lock
