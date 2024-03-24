@@ -22,7 +22,7 @@ class SubmitButton extends StatelessWidget {
     return ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(curColor),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(0),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(16),
                 side: BorderSide(color: curColor))));
   }
 

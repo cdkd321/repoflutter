@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'calculator_brain.dart';
 import 'components/cell_icon_with_txt.dart';
 import 'components/round_text_button.dart';
 import 'const/constants.dart';
 import 'components/reuse_cell_card.dart';
 import 'components/submit_button.dart';
+import 'result_page.dart';
 
 enum Gender {
   MALE,
@@ -27,8 +29,8 @@ class InputPage extends StatefulWidget {
 class InputPageState extends State<InputPage> {
   late Gender selectGender = Gender.MALE;
   Color maleColor = inactiveCardColour;
-  int height = 165;
-  int weight = 80;
+  int height = 180;
+  int weight = 50;
   int age = 18;
 
   void updateColor(Gender gender) {
@@ -38,6 +40,9 @@ class InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text('BMI CALCULATOR'),
+        ),
         body: SafeArea(
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -102,7 +107,7 @@ class InputPageState extends State<InputPage> {
                           cellChild: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('HEIGHT', style: kLabelTextStyle),
+                              Text('WEIGHT', style: kLabelTextStyle),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -115,7 +120,7 @@ class InputPageState extends State<InputPage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   FloatingActionButton(onPressed: ()=>{setState(() {
-                                  weight++;
+                                  weight--;
                                   })},
                                   backgroundColor: maleColor,
                                   elevation: 8,
@@ -158,6 +163,7 @@ class InputPageState extends State<InputPage> {
                                       age--;
                                     }
                                   })},
+                                    heroTag: "btn1",
                                     backgroundColor: maleColor,
                                     elevation: 8,
                                     shape: CircleBorder(),
@@ -180,8 +186,23 @@ class InputPageState extends State<InputPage> {
                             ],
                           ))),
                     ])),
-                  SubmitButton(onPressed: () => {}, txt: 'submit')
+                  SubmitButton(onPressed: () => {
+                    submitData(context)
+                  }, txt: 'submit')
                 ])));
+  }
+
+  void submitData(BuildContext context) {
+    CalculatorBrain calc = CalculatorBrain(height: height, weight: weight);
+    Navigator.push(context,
+      MaterialPageRoute(
+        builder: (context) => ResultsPage(
+          bmiResult: calc.calculateBMI(),
+          resultText: calc.getResult(),
+          interpretation: calc.getInterpretation(),
+        ),
+      ),
+    );
   }
 }
 

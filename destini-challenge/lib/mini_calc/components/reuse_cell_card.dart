@@ -10,7 +10,7 @@ class ReusedCellCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()=> {onPress??onPress!()},
+      onTap: ()=> {onPress!()},
       child: Container(
         child: cellChild,
         alignment: Alignment.center,
