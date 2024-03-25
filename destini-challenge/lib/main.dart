@@ -1,4 +1,4 @@
-import 'package:destini_challenge_starting/day04_weather/weather_loading.dart';
+import 'package:destini_challenge_starting/day04_weather/screens/weather_loading_screen.dart';
 import 'package:destini_challenge_starting/mini_calc/mini_calculator.dart';
 import 'package:flutter/material.dart';
 

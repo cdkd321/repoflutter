@@ -8,7 +8,6 @@ import '../constants.dart';
 class NetworkHelper {
   final String baseWeatherUrl = "api.openweathermap.org";
 
-
   Future<dynamic>? getWeatherData(double lat, double lon) async {
     try {
       Map<String, dynamic> params = HashMap<String, String>();
@@ -32,8 +31,8 @@ class NetworkHelper {
 
   Future<dynamic>? getWeatherDataByCity(Map<String, dynamic> params) async {
     try {
-      http.Response response = await http.get(
-          Uri.http(baseWeatherUrl, '/data/2.5/weather', params));
+      http.Response response = await http.get(Uri.http(baseWeatherUrl, '/data/2.5/weather',
+          params));
       print(response.statusCode);
       if (response.statusCode == 200) {
         print(response.body);

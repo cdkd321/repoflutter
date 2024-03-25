@@ -3,7 +3,7 @@ import 'package:destini_challenge_starting/day04_weather/data/weather_data.dart'
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
-import 'screens/location_screen.dart';
+import 'location_screen.dart';
 
 const Color _kAppColor = Color(0xFFFDDE6F);
 const double _kSize = 100;

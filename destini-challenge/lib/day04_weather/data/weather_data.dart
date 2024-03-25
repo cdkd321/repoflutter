@@ -3,6 +3,7 @@ import 'dart:collection';
 import 'package:destini_challenge_starting/day04_weather/data/network_helper.dart';
 
 import '../constants.dart';
+import 'location.dart';
 
 const double kLat = 29.5;
 const double kLon = -31.22;
@@ -44,7 +45,9 @@ class WeatherDAO {
   }
 
   Future<dynamic>? loadingData() async {
-    var weatherData = networkHelper.getWeatherData(kLat, kLon);
+    var location = Location();
+    await location.getCurrentLocation();
+    var weatherData = networkHelper.getWeatherData(location.getLat(), location.getLon());
     return weatherData;
   }
 

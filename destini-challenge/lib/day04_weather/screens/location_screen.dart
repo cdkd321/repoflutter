@@ -23,7 +23,6 @@ class _LocationScreenState extends State<LocationScreen> {
   @override
   void initState() {
     super.initState();
-
     updateUI(widget.locationWeather);
   }
 
@@ -37,7 +36,7 @@ class _LocationScreenState extends State<LocationScreen> {
         return;
       }
       double temp = weatherData['main']['temp'];
-      temperature = temp.toInt();
+      temperature = (temp - 273.15).toInt();
       var condition = weatherData['weather'][0]['id'];
       weatherIcon = weather.getWeatherIcon(condition);
       weatherMessage = weather.getMessage(temperature);
