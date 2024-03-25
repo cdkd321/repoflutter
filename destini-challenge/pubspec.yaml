@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.6
   font_awesome_flutter: ^10.7.0
+  loading_animation_widget: ^1.2.1
+  http: ^1.2.1
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +22,11 @@ flutter:
   uses-material-design: true
   assets:
     - images/background.png
+    - images/weather/city_background.jpg
+    - images/weather/location_background.jpg
+
+  fonts:
+    - family: Spartan MB
+      fonts:
+        - asset: fonts/SpartanMB-Black.otf
+          weight: 900

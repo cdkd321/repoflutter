@@ -1,5 +1,4 @@
-import 'package:destini_challenge_starting/main.dart';
-import 'package:destini_challenge_starting/story.dart';
+import 'story.dart';
 
 class StoryBrain {
   List<Story> _storyData = [
