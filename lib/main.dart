@@ -1,4 +1,9 @@
 import 'package:destini_challenge_starting/day02_story/story_page.dart';
+import 'package:destini_challenge_starting/day06_fastchat/screen/fast_chat_page.dart';
+import 'package:destini_challenge_starting/day06_fastchat/screen/login_page.dart';
+import 'package:destini_challenge_starting/day06_fastchat/screen/register_page.dart';
+import 'package:destini_challenge_starting/day06_fastchat/screen/welcome_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'day01_quizzler/quizzler.dart';
 import 'day01_quizzler/xloophone.dart';
@@ -9,15 +14,15 @@ import 'day05_bitcoin/price_screen.dart';
 import 'start_page.dart';
 
 
-void main() => runApp(MyApp());
+void main() async {
+
+runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFF0A0E21),
-        scaffoldBackgroundColor: Color(0xFF0A0E21),
-      ),
+      theme: ThemeData.light(),
       routes: <String, WidgetBuilder> {
         XylophonePage.path:  (BuildContext context) => XylophonePage(),
         QuizzlerPage.path:  (BuildContext context) => QuizzlerPage(),
@@ -25,6 +30,10 @@ class MyApp extends StatelessWidget {
         BmiCalcPage.path:  (BuildContext context) => BmiCalcPage(),
         WeatherStartPage.path:  (BuildContext context) => WeatherStartPage(),
         PricePage.path:  (BuildContext context) => PricePage(),
+        WelcomePage.path: (BuildContext context) => WelcomePage(),
+        LoginPage.path: (BuildContext context) => LoginPage(),
+        RegistrationPage.path: (BuildContext context) => RegistrationPage(),
+        FastChatPage.path: (BuildContext context) => FastChatPage(),
       },
       home: StartPage(),
     );

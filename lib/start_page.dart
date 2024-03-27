@@ -1,3 +1,5 @@
+import 'package:destini_challenge_starting/day06_fastchat/screen/login_page.dart';
+import 'package:destini_challenge_starting/day06_fastchat/screen/register_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +9,7 @@ import 'day02_story/story_page.dart';
 import 'day03_bmi_calc/mini_calculator.dart';
 import 'day04_weather/screens/weather_loading_screen.dart';
 import 'day05_bitcoin/price_screen.dart';
+import 'day06_fastchat/screen/welcome_page.dart';
 
 class StartPage extends StatelessWidget {
   List<String> items = [
@@ -15,7 +18,8 @@ class StartPage extends StatelessWidget {
     StoryPage.path,
     BmiCalcPage.path,
     WeatherStartPage.path,
-    PricePage.path
+    PricePage.path,
+    WelcomePage.path,
   ];
 
   @override
@@ -32,7 +36,7 @@ class StartPage extends StatelessWidget {
               return GestureDetector(
                 onTap: ()=> {Navigator.of(context).pushNamed(items[index])},
                 child: ListTile(
-                  title: Text(items[index]),
+                  title: Text(items[index], style: TextStyle(fontSize: 20),),
                 ),
               );
             },),
