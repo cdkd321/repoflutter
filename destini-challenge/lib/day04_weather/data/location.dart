@@ -42,7 +42,6 @@ class Location {
         _latitude = 0;
         _longitude = 0;
       }
-      positionStream?.cancel();
     } catch (e) {
       print(e);
       _latitude = 0;

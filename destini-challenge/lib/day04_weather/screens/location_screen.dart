@@ -36,7 +36,7 @@ class _LocationScreenState extends State<LocationScreen> {
         return;
       }
       double temp = weatherData['main']['temp'];
-      temperature = (temp - 273.15).toInt();
+      temperature = temp.toInt();
       var condition = weatherData['weather'][0]['id'];
       weatherIcon = weather.getWeatherIcon(condition);
       weatherMessage = weather.getMessage(temperature);
@@ -60,7 +60,7 @@ class _LocationScreenState extends State<LocationScreen> {
         child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

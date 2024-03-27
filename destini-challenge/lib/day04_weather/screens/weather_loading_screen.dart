@@ -41,7 +41,7 @@ class WeatherLoadingState extends State<WeatherLoading> {
 
   void loadData() async {
     var weatherData = await WeatherDAO().loadingData();
-    Navigator.push(context,
+    Navigator.pushReplacement(context,
       MaterialPageRoute(builder: (context)=>LocationScreen(
         locationWeather: weatherData,
       )));
