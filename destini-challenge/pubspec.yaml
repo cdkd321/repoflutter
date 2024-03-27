@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  just_audio_cache: ^0.1.2
+  rflutter_alert: ^2.0.7
   cupertino_icons: ^1.0.6
   font_awesome_flutter: ^10.7.0
   loading_animation_widget: ^1.2.1
@@ -22,6 +24,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/
     - images/background.png
     - images/weather/city_background.jpg
     - images/weather/location_background.jpg

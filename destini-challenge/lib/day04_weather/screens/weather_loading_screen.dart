@@ -8,16 +8,18 @@ import 'location_screen.dart';
 const Color _kAppColor = Color(0xFFFDDE6F);
 const double _kSize = 100;
 
-class WeatherLoading extends StatefulWidget {
+class WeatherStartPage extends StatefulWidget {
+
+  static String path = 'weather';
 
   @override
   State<StatefulWidget> createState() {
-    return WeatherLoadingState();
+    return WeatherStartPageState();
   }
 
 }
 
-class WeatherLoadingState extends State<WeatherLoading> {
+class WeatherStartPageState extends State<WeatherStartPage> {
 
   @override
   void initState() {

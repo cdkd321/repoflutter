@@ -6,12 +6,14 @@ import 'package:flutter/cupertino.dart';
 import 'dart:io' show Platform;
 import 'dart:math';
 
-class PriceScreen extends StatefulWidget {
+class PricePage extends StatefulWidget {
+  static String path = 'price_page';
+
   @override
-  _PriceScreenState createState() => _PriceScreenState();
+  _PricePageState createState() => _PricePageState();
 }
 
-class _PriceScreenState extends State<PriceScreen> {
+class _PricePageState extends State<PricePage> {
 
   late int selectIndex = 0;
   late List<String> curRates = ['?', '?', '?'];

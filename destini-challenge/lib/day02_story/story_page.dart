@@ -4,6 +4,7 @@ import 'story_brain.dart';
 StoryBrain storyBrain = StoryBrain();
 
 class StoryPage extends StatefulWidget {
+  static String path = 'story';
   _StoryPageState createState() => _StoryPageState();
 }
 
@@ -12,11 +13,6 @@ class _StoryPageState extends State<StoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("黑暗小说"),),
-      floatingActionButton: Theme(
-        data: ThemeData.light(),
-        child: FloatingActionButton(onPressed: () {  },
-          child: Icon(Icons.add),),
-      ),
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(image: DecorationImage(image: ExactAssetImage('images/background.png'))),
@@ -32,7 +28,7 @@ class _StoryPageState extends State<StoryPage> {
                     child: Text(
                       storyBrain.getStory(),
                       style: TextStyle(
-                        fontSize: 25.0,
+                        fontSize: 30.0,
                       ),
                     ),
                   ),
