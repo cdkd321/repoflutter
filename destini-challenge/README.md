@@ -1,15 +1,22 @@
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
-# Destini 🤔
+# 大综合项目-跟着angela老师学习flutter的练手项目🤔
 
-## Our Goal
+## 包含如下几个小项目
 
-In this challenge, you will be building a choose your own adventure game like Bandersnatch. In the process, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.
+### 恐怖故事小游戏
+一个简单的文字小游戏，小试牛刀。
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/Destini.gif)
+### bmi健康计算器
+输入性别，年龄，身高，体重，就根据国际通用bmi计算标准，告诉你身体bmi指数。
 
+### 简单天气预报
+1. 调用了模糊定位接口，可以获取经纬度
+2. 调用了openweather 的 api 接口。
+3. 调用了根据 cityName 获取天气的 api 接口。
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+### 虚拟币计算器-计算不同币的汇率
+1. 调用了 `coinapi` 的接口，需要科学上网
+2. 区分了平台，android 和 ios 平台展示不同选择列表控件
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)

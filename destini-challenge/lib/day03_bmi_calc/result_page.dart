@@ -1,7 +1,7 @@
-import 'package:destini_challenge_starting/mini_calc/components/reuse_cell_card.dart';
-import 'package:destini_challenge_starting/mini_calc/components/submit_button.dart';
 import 'package:flutter/material.dart';
 
+import 'components/reuse_cell_card.dart';
+import 'components/submit_button.dart';
 import 'const/constants.dart';
 
 class ResultsPage extends StatelessWidget {

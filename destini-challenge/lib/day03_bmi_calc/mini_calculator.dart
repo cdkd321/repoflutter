@@ -1,5 +1,6 @@
-import 'package:destini_challenge_starting/mini_calc/input_page.dart';
 import 'package:flutter/cupertino.dart';
+
+import 'input_page.dart';
 
 class MiniCalculator extends StatelessWidget {
   @override
