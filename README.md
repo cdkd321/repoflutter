@@ -16,11 +16,15 @@
 
 ### 4. bmi健康计算器
 输入性别，年龄，身高，体重，就根据国际通用bmi计算标准，告诉你身体bmi指数。
+![bmi计算器](https://github.com/cdkd321/repoflutter/blob/master/images/readme/bmi_calc.png)
+
 
 ### 5. 简单天气预报
 1. 调用了模糊定位接口，可以获取经纬度。
 2. 调用了 openweather 的 api 接口。
 3. 调用了根据 cityName 获取天气的 api 接口。
+![weather应用](https://github.com/cdkd321/repoflutter/blob/master/images/readme/weather_simple.png)
+
 
 ### 6. 虚拟币计算器-计算不同币的汇率
 1. 调用了 `coinapi` 的接口，需要科学上网
@@ -36,3 +40,4 @@
 
 ### 8. todo项目
 经典的 todo 项目，包含了添加任务，删除任务，勾选任务，取消勾选任务。
+![todo小应用](https://github.com/cdkd321/repoflutter/blob/master/images/readme/todo_main.png)
