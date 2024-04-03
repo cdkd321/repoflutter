@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'add_task_screen.dart';
+import 'components/add_task_screen.dart';
 import 'model/task_model.dart';
-import 'task_list_view.dart';
+import 'components/task_list_view.dart';
 
 
 class TodosEntry extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:destini_challenge_starting/day07_todoz/todoz_entry.dart';
+import 'day07_todoz/todoz_entry.dart';
 
 import 'day01_quizzler/quizzler.dart';
 import 'day01_quizzler/xloophone.dart';
@@ -21,7 +21,7 @@ runApp(MyApp());
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.light(),
+      theme: ThemeData.dark(),
       routes: <String, WidgetBuilder> {
         XylophonePage.path:  (BuildContext context) => XylophonePage(),
         QuizzlerPage.path:  (BuildContext context) => QuizzlerPage(),

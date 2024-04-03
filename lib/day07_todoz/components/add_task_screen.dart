@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'const.dart';
-import 'model/task_model.dart';
+import '../const.dart';
+import '../model/task_model.dart';
 
 class AddTaskScreen extends StatefulWidget {
   Function addTaskPressed;

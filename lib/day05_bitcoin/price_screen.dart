@@ -1,10 +1,11 @@
-import 'package:destini_challenge_starting/day05_bitcoin/component/trading_button.dart';
-import 'package:destini_challenge_starting/day05_bitcoin/model/rate_changer.dart';
 import 'package:flutter/material.dart';
 import 'coin_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:io' show Platform;
 import 'dart:math';
+
+import 'component/trading_button.dart';
+import 'model/rate_changer.dart';
 
 class PricePage extends StatefulWidget {
   static String path = 'price_page';

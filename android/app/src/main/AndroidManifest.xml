@@ -15,7 +15,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="${applicationName}"
-        android:label="destini_challenge_starting"
+        android:label="fastchat"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

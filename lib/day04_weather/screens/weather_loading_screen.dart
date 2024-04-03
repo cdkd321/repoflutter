@@ -1,5 +1,4 @@
-import 'package:destini_challenge_starting/day04_weather/data/network_helper.dart';
-import 'package:destini_challenge_starting/day04_weather/data/weather_data.dart';
+import '../data/weather_data.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 

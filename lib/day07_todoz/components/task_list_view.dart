@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'model/task_model.dart';
+import '../model/task_model.dart';
 import 'task_tile.dart';
 
 class TaskListView extends StatelessWidget {

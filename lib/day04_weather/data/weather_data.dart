@@ -1,9 +1,8 @@
 import 'dart:collection';
 
-import 'package:destini_challenge_starting/day04_weather/data/network_helper.dart';
-
 import '../constants.dart';
 import 'location.dart';
+import 'network_helper.dart';
 
 const double kLat = 29.5;
 const double kLon = -31.22;

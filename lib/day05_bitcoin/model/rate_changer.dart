@@ -1,8 +1,9 @@
 import 'dart:collection';
 import 'dart:convert';
 
-import 'package:destini_challenge_starting/day05_bitcoin/model/constants.dart';
 import 'package:http/http.dart' as http;
+
+import 'constants.dart';
 
 class RateChange {
   Future<dynamic>? getData(String asset_id_base, String asset_id_quote) async {
