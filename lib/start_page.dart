@@ -1,6 +1,3 @@
-import 'package:destini_challenge_starting/day06_fastchat/screen/login_page.dart';
-import 'package:destini_challenge_starting/day06_fastchat/screen/register_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'day01_quizzler/quizzler.dart';
@@ -10,6 +7,7 @@ import 'day03_bmi_calc/mini_calculator.dart';
 import 'day04_weather/screens/weather_loading_screen.dart';
 import 'day05_bitcoin/price_screen.dart';
 import 'day06_fastchat/screen/welcome_page.dart';
+import 'day07_todoz/todoz_entry.dart';
 
 class StartPage extends StatelessWidget {
   List<String> items = [
@@ -20,6 +18,7 @@ class StartPage extends StatelessWidget {
     WeatherStartPage.path,
     PricePage.path,
     WelcomePage.path,
+    TodosEntry.path
   ];
 
   @override
