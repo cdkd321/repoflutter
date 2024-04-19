@@ -13,6 +13,7 @@ import 'day06_fastchat/screen/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'start_page.dart';
 
+/// add some comment
 void main() async {
 
 runApp(MyApp());
